@@ -91,11 +91,18 @@ These functions handle computing, accumulating, and normalizing probabilities ba
 
 ## Usage
 
-1. Ensure you have Python 3 installed.
-2. Run the program using any of the family CSV files:
+Ensure you have Python 3 installed.
+Run the program using any of the family datasets:
+
 ```bash
 python heredity.py data/family0.csv
+python heredity.py data/family1.csv
+python heredity.py data/family2.csv
+python heredity.py data/family3.csv
+python heredity.py data/family4.csv
 ```
-3. You’ll see each individual’s probability for:
-* 0, 1, or 2 copies of the gene
-* Expressing or not expressing the trait
+Each file contains a different family tree structure with varying amounts of known and unknown gene/trait data.
+The output will show for each person:
+
+* The probability of having 0, 1, or 2 copies of the gene.
+* The probability of expressing or not expressing the trait.
