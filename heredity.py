@@ -1,10 +1,24 @@
 """
 DATA.ML.310 - Artificial Intelligence
-Programming task: Heredity
-Student Id: 151788983
+Programming Task: Heredity (Bayesian Genetic Trait Inference)
+
+Student ID: 151788983
 Name:       Zareen Rahman
 Email:      zareen.rahman@tuni.fi
+
+This program estimates the likelihood that individuals in a family tree possess a specific genetic trait,
+based on observed traits, inheritance rules, and mutation probabilities.
+
+It builds a Bayesian Network where:
+- Each person can have 0, 1, or 2 copies of a mutated gene.
+- Each person may or may not exhibit the trait depending on their gene count.
+- Inheritance is probabilistic, and genes may mutate during transmission.
+
+The code exhaustively enumerates all valid combinations of gene and trait assignments for all individuals,
+calculates the joint probability of each combination, and updates per-person probabilities accordingly.
+Finally, it normalizes all distributions so each sums to 1.
 """
+
 import csv
 import itertools
 import sys
