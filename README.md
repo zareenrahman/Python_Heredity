@@ -79,7 +79,7 @@ If they have parents, their gene count depends on inherited probabilities and mu
 
 ## Specification
 
-You implement:
+We have implemented here:
 
 * `joint_probability`
 * `update`
